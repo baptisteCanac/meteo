@@ -1,0 +1,50 @@
+<!-- www.github.com/baptisteCanac -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>meteo</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="jquery-3.6.0.js"></script>
+</head>
+<body>
+	<!-- for call the meteo api, use callApi() function -->
+	<div class="header">
+		<div class="headerContent">
+			<div class="displayInline cityNameContainer">
+				<input type="text" placeholder="City name..." name="" class="searchCity displayInline" id="cityName">
+			</div>
+			<div class="displayInline submitCityContainer">
+				<button class="submitCity displayInline" id="button" onclick="submitCity()">Submit city</button>
+			</div>
+		</div>
+	</div>
+	<div class="centerCityContainer" id="fullCityContainer">
+		<div id="cityContainer">
+			<p class="city" id="city">Royan</p>
+			<div class="imgContainer">
+				<img src="ressources/city.png">
+			</div>
+			<p class="temp" id="temp">18.5</p>
+			<div class="centerTempMinMax">
+				<div class="displayInline tempMinMax tempMinContainer">
+					<p class="displayInline tempMin" id="tempMin">100° min</p>
+				</div>
+				<div class="displayInline tempMinMax tempMaxContainer">
+					<p class="displayInline tempMax" id="tempMax">17° max</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$("#fullCityContainer").hide();
+		$(document).keypress(function(ev){
+    		if (ev.which === 13){
+        		console.log("enter clicked !");
+        		$("#button").click();
+    		}
+		});
+	</script>
+</body>
+</html>

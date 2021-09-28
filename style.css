@@ -1,0 +1,88 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: monospace;
+	background: linear-gradient(to right, #997AE2, #3B2874);
+}
+.displayInline{
+	display: inline;
+}
+.header{
+	background: #2B244D;
+	height: 60px;
+}
+.headerContent{
+	padding-top: 0.5%;
+	display: flex;
+	justify-content: center;
+}
+.searchCity{
+	font-size: 1.5em;
+	width: 300px;
+	height: 40px;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	color: #000;
+}
+.submitCityContainer{
+	padding-left: 2%;
+}
+.submitCity{
+	font-size: 2em;
+	border-radius: 5px;
+	cursor: pointer;
+	background: #fff;
+	border: 1px solid transparent;
+	transition-duration: 0.5s;
+}
+.submitCity:hover{
+	border: 1px solid #fff;
+	transition-duration: 0.5s;
+	background: transparent;
+	color: #fff;
+}
+.centerCityContainer{
+	padding-top: 5%;
+	display: flex;
+	justify-content: center;
+	color: #fff;
+}
+#fullCityContainer{
+	user-select: none;
+	-webkit-touch-callout: none; /* ios */
+	-webkit-user-select: none; /* safari */
+	-khtml-user-select: none; /* Konqueror html */
+	-
+}
+.city{
+	font-size: 2.5em;
+	text-align: center;
+	text-transform: uppercase;
+}
+#cityContainer{
+	width: 35%;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	background: linear-gradient(to bottom, #39518A, #671985);
+}
+.imgContainer{
+	display: flex;
+	justify-content: center;
+}
+img{
+	width: 30%;
+}
+.temp{
+	font-size: 5em;
+	text-align: center;
+}
+.centerTempMinMax{
+	text-align: center;
+}
+.tempMinMax{
+	font-size: 3em
+}
+.tempMaxContainer{
+	padding-left: 15%;
+}
