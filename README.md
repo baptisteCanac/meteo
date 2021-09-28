@@ -1,2 +1,2 @@
 # meteo
-météo website made in html/css ,  js and jQuery
+meteo website made in html/css ,  js and jQuery
